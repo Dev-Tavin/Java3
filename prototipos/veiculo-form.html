@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veículo · MecaGestão</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="veiculos">
+<main>
+  <p class="migalha"><a href="veiculos.html">Veículos</a></p>
+  <div class="topo"><h1 data-editar-texto="Editar veículo">Novo veículo</h1></div>
+  <form data-voltar="veiculos.html">
+    <div class="cartao campos">
+      <div class="campo largo">
+        <label for="cliente">Cliente</label>
+        <select id="cliente" required data-editar="Mariana Souza">
+          <option value="">Selecione</option>
+          <option>Carlos Eduardo Lima</option>
+          <option>Fernanda Ribeiro</option>
+          <option>João Pedro Alves</option>
+          <option>Mariana Souza</option>
+        </select>
+      </div>
+      <div class="campo"><label for="placa">Placa</label><input id="placa" required placeholder="ABC1D23" data-editar="ABC1D23"></div>
+      <div class="campo"><label for="marca">Marca</label><input id="marca" required data-editar="Volkswagen"></div>
+      <div class="campo"><label for="modelo">Modelo</label><input id="modelo" required data-editar="Gol"></div>
+      <div class="campo"><label for="ano">Ano</label><input id="ano" type="number" required data-editar="2018"></div>
+      <div class="campo"><label for="cor">Cor</label><input id="cor" data-editar="Prata"></div>
+    </div>
+    <div class="rodape-form"><a class="btn" href="veiculos.html">Cancelar</a><button class="btn primario">Salvar</button></div>
+  </form>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

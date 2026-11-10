@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mecânico · MecaGestão</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="mecanicos">
+<main>
+  <p class="migalha"><a href="mecanicos.html">Mecânicos</a></p>
+  <div class="topo"><h1 data-editar-texto="Editar mecânico">Novo mecânico</h1></div>
+  <form data-voltar="mecanicos.html">
+    <div class="cartao campos">
+      <div class="campo largo"><label for="nome">Nome</label><input id="nome" required data-editar="Anderson Costa"></div>
+      <div class="campo"><label for="especialidade">Especialidade</label><input id="especialidade" required data-editar="Suspensão e freios"></div>
+      <div class="campo"><label for="telefone">Telefone</label><input id="telefone" placeholder="(00) 00000-0000" data-editar="(47) 90000-0012"></div>
+      <div class="campo">
+        <label for="situacao">Situação</label>
+        <select id="situacao" data-editar="Ativo"><option>Ativo</option><option>Inativo</option></select>
+      </div>
+    </div>
+    <div class="rodape-form"><a class="btn" href="mecanicos.html">Cancelar</a><button class="btn primario">Salvar</button></div>
+  </form>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

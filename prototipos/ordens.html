@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ordens de serviço · MecaGestão</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="ordens">
+<main>
+  <div class="topo">
+    <h1>Ordens de serviço</h1>
+    <a class="btn primario" href="ordem-form.html">Nova ordem de serviço</a>
+  </div>
+  <div class="cartao tabela">
+    <table class="compacta">
+      <thead><tr><th>Nº</th><th>Abertura</th><th>Veículo</th><th>Cliente</th><th>Mecânico</th><th>Status</th><th class="num">Total</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>1042</td><td>09/11/2026</td><td>ABC1D23 · Gol</td><td>Mariana Souza</td><td>Anderson Costa</td><td><span class="status andamento">Em andamento</span></td><td class="num">R$ 790,00</td><td class="acoes"><a href="ordem-detalhe.html">Ver</a><a href="ordem-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="Ordem de serviço 1042">Excluir</button></td></tr>
+        <tr><td>1041</td><td>07/11/2026</td><td>BRA2E19 · Argo</td><td>Carlos Eduardo Lima</td><td>Roberto Nunes</td><td><span class="status aberta">Aberta</span></td><td class="num">R$ 180,00</td><td class="acoes"><a href="ordem-detalhe.html">Ver</a><a href="ordem-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="Ordem de serviço 1041">Excluir</button></td></tr>
+        <tr><td>1040</td><td>05/11/2026</td><td>QWE3F45 · Onix</td><td>Fernanda Ribeiro</td><td>Patrícia Gomes</td><td><span class="status concluida">Concluída</span></td><td class="num">R$ 380,00</td><td class="acoes"><a href="ordem-detalhe.html">Ver</a><a href="ordem-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="Ordem de serviço 1040">Excluir</button></td></tr>
+        <tr><td>1039</td><td>03/11/2026</td><td>RTY4G67 · Civic</td><td>João Pedro Alves</td><td>Anderson Costa</td><td><span class="status concluida">Concluída</span></td><td class="num">R$ 150,00</td><td class="acoes"><a href="ordem-detalhe.html">Ver</a><a href="ordem-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="Ordem de serviço 1039">Excluir</button></td></tr>
+        <tr><td>1038</td><td>02/11/2026</td><td>ZXC5H89 · HB20</td><td>Mariana Souza</td><td>Roberto Nunes</td><td><span class="status cancelada">Cancelada</span></td><td class="num">R$ 180,00</td><td class="acoes"><a href="ordem-detalhe.html">Ver</a><a href="ordem-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="Ordem de serviço 1038">Excluir</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

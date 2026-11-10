@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Painel · MecaGestão</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="painel">
+<main>
+  <div class="topo">
+    <h1>Painel</h1>
+    <a class="btn primario" href="ordem-form.html">Nova ordem de serviço</a>
+  </div>
+
+  <div class="indicadores">
+    <div class="cartao"><strong>1</strong><span>Ordens abertas</span></div>
+    <div class="cartao"><strong>1</strong><span>Em andamento</span></div>
+    <div class="cartao"><strong>2</strong><span>Concluídas no mês</span></div>
+    <div class="cartao"><strong>R$ 530,00</strong><span>Faturado no mês</span></div>
+  </div>
+
+  <h2>Ordens em aberto</h2>
+  <div class="cartao tabela">
+    <table>
+      <thead><tr><th>Nº</th><th>Veículo</th><th>Cliente</th><th>Mecânico</th><th>Status</th><th class="num">Total</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>1042</td><td>ABC1D23 · Gol</td><td>Mariana Souza</td><td>Anderson Costa</td><td><span class="status andamento">Em andamento</span></td><td class="num">R$ 790,00</td><td class="acoes"><a href="ordem-detalhe.html">Ver</a></td></tr>
+        <tr><td>1041</td><td>BRA2E19 · Argo</td><td>Carlos Eduardo Lima</td><td>Roberto Nunes</td><td><span class="status aberta">Aberta</span></td><td class="num">R$ 180,00</td><td class="acoes"><a href="ordem-detalhe.html">Ver</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

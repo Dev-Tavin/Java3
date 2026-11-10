@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Veículos · MecaGestão</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="veiculos">
+<main>
+  <div class="topo">
+    <h1>Veículos</h1>
+    <a class="btn primario" href="veiculo-form.html">Novo veículo</a>
+  </div>
+  <div class="cartao tabela">
+    <table>
+      <thead><tr><th>Placa</th><th>Marca</th><th>Modelo</th><th>Ano</th><th>Cor</th><th>Cliente</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>ABC1D23</td><td>Volkswagen</td><td>Gol</td><td>2018</td><td>Prata</td><td>Mariana Souza</td><td class="acoes"><a href="veiculo-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="ABC1D23 · Gol">Excluir</button></td></tr>
+        <tr><td>BRA2E19</td><td>Fiat</td><td>Argo</td><td>2021</td><td>Branco</td><td>Carlos Eduardo Lima</td><td class="acoes"><a href="veiculo-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="BRA2E19 · Argo">Excluir</button></td></tr>
+        <tr><td>QWE3F45</td><td>Chevrolet</td><td>Onix</td><td>2020</td><td>Preto</td><td>Fernanda Ribeiro</td><td class="acoes"><a href="veiculo-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="QWE3F45 · Onix">Excluir</button></td></tr>
+        <tr><td>RTY4G67</td><td>Honda</td><td>Civic</td><td>2016</td><td>Cinza</td><td>João Pedro Alves</td><td class="acoes"><a href="veiculo-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="RTY4G67 · Civic">Excluir</button></td></tr>
+        <tr><td>ZXC5H89</td><td>Hyundai</td><td>HB20</td><td>2019</td><td>Vermelho</td><td>Mariana Souza</td><td class="acoes"><a href="veiculo-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="ZXC5H89 · HB20">Excluir</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

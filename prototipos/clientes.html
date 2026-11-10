@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clientes · MecaGestão</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="clientes">
+<main>
+  <div class="topo">
+    <h1>Clientes</h1>
+    <a class="btn primario" href="cliente-form.html">Novo cliente</a>
+  </div>
+  <div class="cartao tabela">
+    <table>
+      <thead><tr><th>Nome</th><th>CPF</th><th>Telefone</th><th>E-mail</th><th></th></tr></thead>
+      <tbody>
+        <tr><td>Carlos Eduardo Lima</td><td>222.222.222-22</td><td>(47) 90000-0002</td><td>carlos@example.com</td><td class="acoes"><a href="cliente-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="Carlos Eduardo Lima">Excluir</button></td></tr>
+        <tr><td>Fernanda Ribeiro</td><td>333.333.333-33</td><td>(47) 90000-0003</td><td>fernanda@example.com</td><td class="acoes"><a href="cliente-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="Fernanda Ribeiro">Excluir</button></td></tr>
+        <tr><td>João Pedro Alves</td><td>444.444.444-44</td><td>(47) 90000-0004</td><td>joao@example.com</td><td class="acoes"><a href="cliente-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="João Pedro Alves">Excluir</button></td></tr>
+        <tr><td>Mariana Souza</td><td>111.111.111-11</td><td>(47) 90000-0001</td><td>mariana@example.com</td><td class="acoes"><a href="cliente-form.html?editar=1">Editar</a><button class="link perigo" data-excluir="Mariana Souza">Excluir</button></td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>

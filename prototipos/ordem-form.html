@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ordem de serviço · MecaGestão</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="ordens">
+<main>
+  <p class="migalha"><a href="ordens.html">Ordens de serviço</a></p>
+  <div class="topo"><h1 data-editar-texto="Editar ordem de serviço 1042">Nova ordem de serviço</h1></div>
+  <form data-voltar="ordens.html">
+    <div class="cartao campos">
+      <div class="campo">
+        <label for="veiculo">Veículo</label>
+        <select id="veiculo" required data-editar="ABC1D23 · Gol · Mariana Souza">
+          <option value="">Selecione</option>
+          <option>ABC1D23 · Gol · Mariana Souza</option>
+          <option>BRA2E19 · Argo · Carlos Eduardo Lima</option>
+          <option>QWE3F45 · Onix · Fernanda Ribeiro</option>
+          <option>RTY4G67 · Civic · João Pedro Alves</option>
+          <option>ZXC5H89 · HB20 · Mariana Souza</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="mecanico">Mecânico responsável</label>
+        <select id="mecanico" required data-editar="Anderson Costa">
+          <option value="">Selecione</option>
+          <option>Anderson Costa</option>
+          <option>Patrícia Gomes</option>
+          <option>Roberto Nunes</option>
+        </select>
+      </div>
+      <div class="campo"><label for="abertura">Data de abertura</label><input id="abertura" type="date" required value="2026-11-09"></div>
+      <div class="campo"><label for="conclusao">Data de conclusão</label><input id="conclusao" type="date"></div>
+      <div class="campo">
+        <label for="status">Status</label>
+        <select id="status" data-editar="Em andamento"><option>Aberta</option><option>Em andamento</option><option>Concluída</option><option>Cancelada</option></select>
+      </div>
+      <div class="campo largo"><label for="problema">Problema relatado</label><textarea id="problema" required data-editar="Ruído ao frear e volante puxando para a direita."></textarea></div>
+      <div class="campo largo"><label for="observacoes">Observações</label><textarea id="observacoes" data-editar="Cliente autorizou a troca das pastilhas dos dois eixos."></textarea></div>
+    </div>
+
+    <div class="cartao">
+      <h2>Serviços da ordem</h2>
+      <div class="novo-item">
+        <div class="campo">
+          <label for="servico">Serviço</label>
+          <select id="servico">
+            <option>Alinhamento e balanceamento</option>
+            <option>Higienização do ar-condicionado</option>
+            <option>Revisão elétrica</option>
+            <option>Troca de óleo e filtro</option>
+            <option>Troca de pastilhas de freio (por eixo)</option>
+          </select>
+        </div>
+        <div class="campo"><label for="quantidade">Quantidade</label><input id="quantidade" type="number" min="1" value="1"></div>
+        <div class="campo"><label for="preco">Preço unit. (R$)</label><input id="preco" type="number" min="0" step="0.01" value="150.00"></div>
+        <button class="btn" type="button">Adicionar</button>
+      </div>
+      <table>
+        <thead><tr><th>Serviço</th><th class="num">Qtd.</th><th class="num">Preço unit.</th><th class="num">Subtotal</th><th></th></tr></thead>
+        <tbody>
+          <tr data-so-novo><td class="vazio" colspan="5">Nenhum serviço adicionado.</td></tr>
+          <tr data-so-editar><td>Troca de pastilhas de freio (por eixo)</td><td class="num">2</td><td class="num">R$ 320,00</td><td class="num">R$ 640,00</td><td class="acoes"><button class="link perigo" type="button">Remover</button></td></tr>
+          <tr data-so-editar><td>Alinhamento e balanceamento</td><td class="num">1</td><td class="num">R$ 150,00</td><td class="num">R$ 150,00</td><td class="acoes"><button class="link perigo" type="button">Remover</button></td></tr>
+        </tbody>
+        <tfoot><tr><td colspan="3">Total</td><td class="num" data-editar-texto="R$ 790,00">R$ 0,00</td><td></td></tr></tfoot>
+      </table>
+    </div>
+    <div class="rodape-form"><a class="btn" href="ordens.html">Cancelar</a><button class="btn primario">Salvar</button></div>
+  </form>
+</main>
+<script src="js/app.js"></script>
+</body>
+</html>
